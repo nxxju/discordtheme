@@ -1,0 +1,44 @@
+/**
+ * @name Ninjus Discord Theme
+ * @author Ninju | nxxju.iyer
+ * @authorLink https://discord.com/users/743317832434974811
+ * @version 1.0.0
+ * @description A decluttered, simple, and modern theme for Discord.
+ * @website https://ninjudev.vercel.app/
+ */
+
+@import url("https://nxxju.github.io/discordtheme/source.css");
+
+:root {
+    /* My Account Button */
+    --username-button-width: 128px; /* Adjust the width of the username button to match your discord username length */
+    --username-button-padding: 6px; /* Padding for the username button */
+    --username-button-right-margin: 12px; /* Width between the username button and the window controls */
+
+    /* Server List */
+    --server-icon-size: 40px; /* Size of the server icons */
+    --server-outer-margin: 14px; /* Spacing between the edge of the container and the server icons */
+    --server-spacing: 10px; /* Spacing between each server icon */
+
+    /* Server Info Bar */
+    --app-info-bar-height: 48px; /* Height for container that holds the server name, info, actions, and search */
+
+    /* Scroll Settings */
+    --scrollbar-width: 12px; /* Width of the scrollbar */
+    --scrollbar-color: rgba(255, 255, 255, 0.4); /* Color of the scrollbar */
+    --scrollbar-thumb-color: rgba(0, 0, 0, 0.6); /* Color of the scrollbar thumb */
+}
+
+/* Target only the Discord Developer Portal page */
+@-moz-document domain("discord.com") {
+    @media screen and (min-width: 1024px) {
+        /* Scroll Settings for the Developer Portal */
+        body[data-page="developers"] {
+            --scrollbar-width: 12px; /* Width of the scrollbar */
+            --scrollbar-color: rgba(255, 255, 255, 0.4); /* Color of the scrollbar */
+            --scrollbar-thumb-color: rgba(0, 0, 0, 0.6); /* Color of the scrollbar thumb */
+        }
+    }
+}
+
+/* General styling for other parts of Discord (not affected by scroll settings) */
