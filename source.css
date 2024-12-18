@@ -142,17 +142,17 @@
   --button-blur: blur(0px);
   --channel-icon: #787878;
 }
-[id^="Ninjus Theme"] .bd-addon-header .bd-version:before {
+[id^="Alexis Modern Discord Theme"] .bd-addon-header .bd-version:before {
   content: "version " var(--theme-version);
   font-size: 14px;
 }
 .info_c5a741:after {
-  content: "Ninjus Theme - " var(--theme-version);
+  content: "Alexis Jonsson Modern Discord Theme - " var(--theme-version);
   top: 16px;
   color: var(--text-muted);
   position: relative;
 }
-[id^="Ninjus Theme"] .bd-addon-header .bd-version {
+[id^="Alexis Modern Discord Theme"] .bd-addon-header .bd-version {
   font-size: 0;
 }
 .app-focused {
@@ -1010,6 +1010,12 @@
   display: flex;
   flex-direction: var(--server-direction);
   gap: var(--server-margin);
+  margin-bottom: 5px;
+}
+#app-mount .wrapper_bc7085 ul[id^="folder-items-"] {
+  gap: var(--server-margin) !important;
+  margin-top: calc(var(--server-margin) * -0.5) !important;
+  margin-bottom: calc(var(--server-margin) * -1.5) !important;
 }
 #app-mount .guilds_a4d4d9 [class*="listItem"]:not([class*="listItemWrapper"]) {
   width: var(--server-size);
@@ -1027,6 +1033,7 @@
   border-radius: calc(var(--server-size) / 2);
   transform: translateX(-50%);
   height: calc(100% - var(--server-margin)) !important;
+  padding-top: 15px;
 }
 #app-mount .guilds_a4d4d9 .folder_bc7085 {
   background: 0 0;
@@ -1233,9 +1240,11 @@ body.foldercontentopened .base_a4d4d9 {
   }
 }
 .sidebar_a4d4d9 {
-  width: var(--sidebar-width);
   flex-direction: column;
   transition: width var(--sidebar-width-transition);
+}
+html:not(.visual-refresh) .sidebar_a4d4d9:not(.hidden_a4d4d9) {
+  width: var(--sidebar-width) !important;
 }
 .sidebar_a4d4d9.hideChannelElement {
   width: var(--sidebar-width) !important;
@@ -2963,6 +2972,7 @@ body.foldercontentopened .base_a4d4d9 {
 }
 .panels_a4d4d9 .container_b2ca13 {
   max-width: fit-content;
+  container-type: unset;
 }
 .panels_a4d4d9 .wrapper_adcaac .container_adcaac {
   min-width: unset;
@@ -3646,24 +3656,24 @@ html.platform-osx #app-mount .guilds_a4d4d9:after {
 .button_edead5 {
   border-radius: 50%;
 }
-.statusBubbleOuter_d0a252:before {
+.statusBubbleOuter_af9888:before {
   border-radius: 19px 19px 0 0;
   height: 9.5px;
   transform: translateY(1px) translateX(1px);
 }
-.statusBubbleOuter_d0a252,
-.statusBubbleOuter_d0a252:after,
-.statusBubbleOuter_d0a252:before,
-.statusBubble_d0a252 {
+.statusBubbleOuter_af9888,
+.statusBubbleOuter_af9888:after,
+.statusBubbleOuter_af9888:before,
+.statusBubble_af9888 {
   border: unset !important;
   box-shadow: none;
 }
-.statusBubbleOuter_d0a252 {
+.statusBubbleOuter_af9888 {
   background: unset !important;
 }
-.statusBubbleOuter_d0a252:after,
-.statusBubbleOuter_d0a252:before,
-.statusBubble_d0a252 {
+.statusBubbleOuter_af9888:after,
+.statusBubbleOuter_af9888:before,
+.statusBubble_af9888 {
   background: var(--bg-mod-faint) !important;
 }
 .container_b64375 {
@@ -11418,14 +11428,14 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   z-index: 4;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   a
   .iconContainer_d8bfb3 {
@@ -11434,7 +11444,7 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   margin-bottom: 12px;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   a
   .name_d8bfb3 {
@@ -11442,7 +11452,7 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   font-size: 14px;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_f6f816 {
   width: 50%;
@@ -11450,7 +11460,7 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   margin-bottom: 8px;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_f6f816
   .link_d8bfb3 {
@@ -11458,28 +11468,28 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   margin: 0;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_a08117,
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_a08117
   ~ .containerDefault_f6f816 {
   width: 100%;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_f6f816:nth-child(even),
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_f6f816:nth-child(odd) {
   width: calc(50% - 8px);
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_f6f816
   .link_d8bfb3
@@ -11488,7 +11498,7 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   transition: transform 45ms ease;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_f6f816
   .link_d8bfb3:active
@@ -11497,49 +11507,49 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   transform: translate(0, 2px);
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .containerDefault_f6f816
   .linkTop_d8bfb3 {
   display: block;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .wrapper_d8bfb3 {
   padding: 0;
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .link_d8bfb3 {
   background-color: var(--background-transparent-header);
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .content_eed6a8
   .link_d8bfb3:hover {
   background-color: var(--background-modifier-hover);
 }
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   .name_fd6364 {
   font-size: calc(var(--server-title-fontsize) + 2px);
 }
-.sidebar_a4d4d9 .container_ee69e0[aria-label*="Ninjus Theme"]:after {
+.sidebar_a4d4d9 .container_ee69e0[aria-label*="Alexis Modern Theme"]:after {
   content: "";
   background-color: #534466;
   height: 24px;
 }
-.container_ee69e0[aria-label*="Ninjus Theme"]
+.container_ee69e0[aria-label*="Alexis Modern Theme"]
   .scroller_c43953.thin_eed6a8.scrollerBase_c49869 {
   --mask-image: none;
 }
-.container_ee69e0[aria-label*="Ninjus Theme"]
+.container_ee69e0[aria-label*="Alexis Modern Theme"]
   [data-list-item-id*="channels___upcoming-events-"]
   > div.iconContainer_d8bfb3
   > svg,
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   [data-list-item-id*="channels___upcoming-events-"]
   > div.iconContainer_d8bfb3
   > svg {
@@ -11548,11 +11558,11 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   margin-left: calc(50% - 8px);
   margin-bottom: 12px;
 }
-.container_ee69e0[aria-label*="Ninjus Theme"]
+.container_ee69e0[aria-label*="Alexis Modern Theme"]
   [data-list-item-id*="channels___upcoming-events-"]
   > div.name_d8bfb3,
 .sidebar_a4d4d9
-  .container_ee69e0[aria-label*="Ninjus Theme"]
+  .container_ee69e0[aria-label*="Alexis Modern Theme"]
   [data-list-item-id*="channels___upcoming-events-"]
   > div.name_d8bfb3 {
   text-align: center;
@@ -11578,7 +11588,7 @@ html:not(.app-focused) .sidebarRegionScroller_c25c6d {
   left: var(--margin);
   right: var(--margin);
   bottom: -125%;
-  background-image: url(https://nxxju.github.io/BetterDiscordAddons/Themes/banners/chokepoint-games-dev-bannerv4.png);
+  background-image: url(https://alexisjonsson.github.io/BetterDiscordAddons/Themes/banners/chokepoint-games-dev-bannerv4.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.64;
@@ -11711,7 +11721,7 @@ div.icon_c07d45 {
   left: 4px !important;
   width: calc(var(--sidebar-width) - 72px);
 }
-.container_ee69e0[aria-label*="Ninjus Theme"]
+.container_ee69e0[aria-label*="Alexis Modern Theme"]
   > #channels
   > ul
   > li:nth-child(n)
@@ -12108,7 +12118,7 @@ button.tagsButton_a6d69a {
   opacity: 0;
   cursor: pointer;
 }
-.fileNameLink_b52bef,
+.fileNameLink_f46c86,
 .option_b0286e {
   line-height: 20px;
 }
@@ -12190,4 +12200,7 @@ button.tagsButton_a6d69a {
 }
 .menus_ad5fac svg:has(.status_c7d26b) {
   margin: 2px;
+}
+[class^="footer_"]:has([class*="fixedDiscoveryIcon_"]) {
+  display: none;
 }
